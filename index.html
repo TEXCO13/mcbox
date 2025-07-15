@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>MC Box - 파일 다운로드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>📦 MC Box</h1>
+    <p>파일 이름을 입력하고 다운로드 링크를 생성하세요</p>
+
+    <input type="text" id="fileName" placeholder="파일명 (예: example.pdf)" />
+    <button onclick="makeDownloadLink()" class="btn">링크 생성</button>
+
+    <div id="linkBox" class="hidden">
+      <p>✅ 아래 링크를 통해 다운로드하세요</p>
+      <a id="fileLink" href="#" download class="btn secondary">⬇️ 다운로드</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
